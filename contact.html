@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <meta name="description" content="クリスタチャレンジ中級編">
+        <!-- viewport設定（レスポンシブ） -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/destyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+
+    <body>
+        <!-- HEADER~TOP -->
+        <div class="contact-home">  
+            <header class="sub-header">
+                <div class="header-wrapper">
+                    <h1 class="site-title">Cresta Design</h1>
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-item"><a href="/index.html/#concept">Concept</a></li>
+                            <li class="header-nav-item"><a href="#works">Works</a></li>
+                            <li class="header-nav-item"><a href="#service">Service</a></li>
+                            <li class="header-nav-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="burger-btn">
+                        <span class="bar bar-top"></span>
+                        <span class="bar bar-mid"></span>
+                        <span class="bar bar-bottom"></span>
+                    </button>
+                </div>
+            </header>
+            <div class="contact-home-content wrapper"> 
+                <h3 class="contact-heading">Contact</h3>
+                <p class="bg-2 contact-bg">Contact us</p>
+            </div>
+        </div> 
+        <!-- CONTACT-FORM -->
+        <form action="" name="contact-form">
+            <div class="checkbox">
+                <label for="purpose">お問い合わせ内容</label>
+                <input type="checkbox" id="purpose" name="purpose" value="資料請求">資料請求<br class="br-sp">
+                <input type="checkbox" id="purpose" name="purpose" value="お電話でのご相談を希望" class="checkbox-2">お電話でのご相談を希望<br class="br-sp">
+                <input type="checkbox" id="purpose" name="purpose" value="申し込み" class="checkbox-2">申し込み
+            </div>
+            <div>
+                <label for="name">担当者名</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="phone">電話番号</label>
+                <input type="text" id="phone">
+            </div>
+            <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="message">その他</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Submit" class="button">
+            </div>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <footer><small>&copy;cresta.design all rights reserved.</small></footer>
+
+    </body>
+    
+        
+    

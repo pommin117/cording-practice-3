@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+/* BASE
+------------------------------------ */
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Noto Serif', serif, 'Noto Serif JP', serif;
+    color: #282F35;
+    letter-spacing: 0.1rem;
+}
+p {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    padding: 0 8.5%;
+}
+.br-sp {
+    display: none;
+}
+.site-title {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* HEADER FOOTER
+--------------------------------------- */
+.home-header {
+    /* ヘッダー固定*/
+    box-sizing: border-box; /* padding分を含んで幅を100%にする */
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8.5%;
+}
+.header-nav-list {
+    display: flex;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+.header-nav-item {
+    padding-left: 20px;
+}
+.home-header.change {
+    background-color: #282f35;
+    transition: .3s;
+}
+.burger-btn {
+    display: none;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* FV
+-------------------------------------------- */
+.slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+.fv-content {
+    position: absolute;
+    top: 60%;
+    left: 8.5%;
+    width: max-content;
+}
+.main-copy {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+.sub-copy {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 1rem;
+    text-align: center;
+    
+}
+
+
+
+/* SECTION
+------------------------------------ */
+.section-heading {
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    color: #282F35;
+    padding-top: 100px;
+    padding-left: 8.5%;
+    
+}
+.section-heading::after {
+    content: "";
+    height: 5px;
+    width: 200px;
+    display: inline-block;
+    background: #282F35;
+    margin-left: 2rem;
+    vertical-align: middle;
+}
+.text-white {
+    color: #fff;
+}
+.text-right {
+    text-align: right;
+}
+.section-heading.text-white::after {
+    background-color: #fff;
+}
+.bg-1 {
+    color: #282F35;
+    opacity: 0.1;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: 0.4rem;
+    padding: 80px 0;
+}
+.bg-2 {
+    color: #fff;
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    padding: 80px 0;
+    opacity: 0.1;
+}
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    background: #F7D43F;
+    color: #171717;
+    border-radius: 100vh;
+    padding: 15px 60px;
+    display: inline-block;
+    margin-top: 80px;
+    filter: drop-shadow(0 0 6px #1B1310);
+}
+.button:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+/* CONCEPT
+------------------------------------ */
+.concept-wrapper {
+    padding: 0 8.5%;
+}
+.concept-lead {
+    color: #282F35;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 80px 0;
+}
+.concept-content {
+    display: flex;
+    justify-content: space-between;
+}
+.concept-content p {
+    font-weight: bold;
+    width: 440px;
+    margin: auto 0;
+}
+.concept-content img {
+    width: 440px;
+}
+
+/* WORKS
+--------------------------------------- */
+#works {
+    background-image: url(../img/works-bgi@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.works-wrapper {
+    padding: 0 8.5%;
+    text-align: center;
+}
+.works-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.works-item {
+    width: 320px;
+    background: #fff;
+}
+.works-item p {
+    font-size: 1rem;
+    display: block;
+    padding: 20px;
+}
+
+/* SERVICE
+----------------------------------------- */
+#service h3 {
+    padding-left: 17%;
+}
+#service.wrapper {
+    padding: 0;
+}
+.service-content {
+    width: 100vw;
+    display: flex;
+    padding-top: 80px;
+}
+.service-item {
+    width: 33.3%;
+}
+.service-item a:hover {
+    background-color: rgba(40,47,53,.7);
+    transition: .3s;
+}
+.service-item a {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    line-height: 320px;
+    text-align: center;
+}
+.service-item-1 {
+    background-image: url(../img/service-img01@2x.jpg);
+}
+.service-item-2 {
+    background-image: url(../img/service-img02@2x.jpg);
+}
+.service-item-3 {
+    background-image: url(../img/sevice-img03@2x.jpg);
+}
+#service p {
+    padding-right: 8.5%;
+}
+
+/* CONTACT
+------------------------------------- */
+#contact {
+    background-image: url(../img/contact-bgi@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.contact-content {
+    text-align: center;
+    padding-top: 80px;
+}
+.contact-content p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    /* BASE */
+    .wrapper {
+        padding: 0 15px;
+    }
+    .br-sp {
+        display: block;
+    }
+    .br-dt {
+        display: none;
+    }
+    .header-wrapper {
+        padding: 30px 15px 20px;
+    }
+    .fv-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .main-copy {
+        font-size: 37px;
+        margin-bottom: 40px;
+    }
+    .sub-copy {
+        font-size: 30px;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+        padding-left: 0;
+        letter-spacing: 0.1rem;
+    }
+    .section-heading::after {
+        width: 100px;
+    }
+    
+    .bg-1 {
+        font-size: 40px;
+        letter-spacing: 0.2rem;
+        padding: 50px 0;
+    }
+    .bg-2 {
+        font-size: 40px;
+        letter-spacing: 0.2rem;
+        padding: 50px 0;
+    }
+    .button {
+        font-size: 1rem;
+    }
+    /* HAMBURGER MENU */
+    .header-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #282F35;
+    }
+    .header-nav-list {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav-item{
+        margin: 0 0 30px;
+    }
+    .burger-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+    .burger-btn .bar {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+    }
+    .bar-top {
+        margin-bottom: 8px;
+    }
+    .bar-mid {
+        margin-bottom: 8px;
+    }
+    .burger-btn.cross .bar-top {
+        transform: rotate(45deg) translate(8px, 8px);
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-mid {
+        opacity: 0;
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-bottom {
+        transform: rotate(-45deg) translate(8px, -8px);
+        transition: .3s;
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+
+    /* CONCEPT */
+    .concept-wrapper {
+        padding: 0;
+    }
+    .concept-content {
+        display: block;
+        justify-content: center;
+    }
+    .concept-lead {
+        font-size: 20px;
+        padding: 50px 0 30px;
+    }
+    .concept-content p {
+        width: 100%;
+        
+    }
+    .concept-content img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding-top: 20px;
+    }
+
+    /* WORKS */
+    .works-wrapper {
+        padding: 0;
+    }
+    .works-content {
+        display: block;
+    }
+    .works-item {
+        margin: 0 auto 40px;
+    }
+
+    /* SERVICE */
+    #service h3 {
+        padding-left: 15px;
+    }
+    .service-content {
+        display: block;
+        
+        
+    }
+    .service-item {
+        width: 100%;
+    }
+    .service-item-2 {
+        margin: 20px 0;
+    }
+    .service-item a {
+        font-size: 1.7rem;
+        line-height: 250px;
+    }
+    #service p {
+        padding-right: 15px;
+    }
+
+    /* CONTACT */
+    .contact-content p {
+        font-size: 1.3rem;
+    }
+
+}

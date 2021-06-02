@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* BASE
+------------------------------------ */
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Noto Serif', serif, 'Noto Serif JP', serif;
+    color: #282F35;
+    letter-spacing: 0.1rem;
+}
+p {
+    line-height: 1.7;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+.wrapper {
+    padding: 0 8.5%;
+}
+.br-sp {
+    display: none;
+}
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    background: #F7D43F;
+    color: #171717;
+    border-radius: 100vh;
+    padding: 15px 60px;
+    display: inline-block;
+    margin-top: 80px;
+    filter: drop-shadow(0 0 6px #1B1310);
+}
+.button:hover {
+    opacity: .7;
+    transition: .3s;
+}
+
+/* HEADER FOOTER
+--------------------------------------- */
+.sub-header {
+    box-sizing: border-box;
+}
+.site-title {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+}
+.header-nav-list {
+    display: flex;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 8px;
+}
+.header-nav-item {
+    padding-left: 20px;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8.5%;
+}
+.burger-btn {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* PAGE-CONTACT
+------------------------------------- */
+.contact-home {
+    background-image: url(../img/contact-page-bgi@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 453px;
+    position: relative;
+}
+.contact-heading {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    padding-top: 120px;
+}
+.contact-bg {
+    color: #fff;
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    padding-top: 20px;
+    opacity: 0.1;
+}
+
+form {
+    margin: 100px auto;
+    width: 700px;
+}
+form div {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #171717;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.checkbox input {
+    margin-right: 0.7rem;
+}
+.checkbox-2 {
+    margin-left:1.7rem;
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"]{
+    display: inline-block;
+    margin-top: 40px;
+}
+.submit-btn {
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    /* BASE */
+    .wrapper {
+        padding: 0 15px;
+    }
+    .br-sp {
+        display: block;
+    }
+    .br-dt {
+        display: none;
+    }
+    .header-wrapper {
+        padding: 30px 15px 0;
+    }
+    /* HAMBURGER MENU */
+    .header-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #282F35;
+    }
+    .header-nav-list {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-nav-item{
+        margin: 0 0 30px;
+    }
+    .burger-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+    .burger-btn .bar {
+        display: block;
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+    }
+    .bar-top {
+        margin-bottom: 8px;
+    }
+    .bar-mid {
+        margin-bottom: 8px;
+    }
+    .burger-btn.cross .bar-top {
+        transform: rotate(45deg) translate(8px, 8px);
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-mid {
+        opacity: 0;
+        transition: .3s;
+    }
+    .burger-btn.cross .bar-bottom {
+        transform: rotate(-45deg) translate(8px, -8px);
+        transition: .3s;
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+
+    .contact-home {
+        height: 360px;
+    }
+    .contact-heading {
+        font-size: 2rem;
+        padding-top: 90px;
+    }
+    .contact-bg {
+        font-size: 40px;
+        letter-spacing: 0.2rem;
+        padding-top: 50px;
+    }
+    .button {
+        font-size: 1rem;
+    }
+    form {
+        padding: 0 15px;
+        width: 100%;
+    }
+    .checkbox-2 {
+        margin-left: 0;
+    }
+    
+
+}
